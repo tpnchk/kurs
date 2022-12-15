@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="table" layoutY="53.0" prefHeight="457.0" prefWidth="696.0">
+        <columns>
+            <TableColumn fx:id="idtax" prefWidth="55.19998097419739" text="ID" />
+          <TableColumn fx:id="User" prefWidth="140.80002212524414" text="Користувач" />
+          <TableColumn fx:id="TypeTax" prefWidth="206.40000915527344" text="Тип податку" />
+            <TableColumn fx:id="StartBalance" prefWidth="84.79998779296875" text="Сума" />
+            <TableColumn fx:id="Participant" prefWidth="116.00006103515625" text="Процент податку" />
+            <TableColumn fx:id="Tax" prefWidth="87.9998779296875" text="Податок" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Text fill="RED" layoutX="307.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax" textAlignment="CENTER" wrappingWidth="29.799988746642953">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="326.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculate" textAlignment="CENTER" wrappingWidth="76.20001316070545">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="butAddTax" layoutX="14.0" layoutY="564.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" text="Додати податок" />
+      <Button fx:id="butDeleteTax" layoutX="14.0" layoutY="526.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" text="Видалити податок" />
+      <Button fx:id="butSearchSumma" layoutX="253.0" layoutY="526.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="203.0" text="Порахувати суму всіх податків" />
+      <TextField fx:id="tfSumma" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="280.0" layoutY="564.0" scaleShape="false" />
+      <Button fx:id="butTaxSceneBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" text="&lt;-" />
+      <Button fx:id="butRefresh" layoutX="606.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Оновити" />
+      <Button fx:id="butSwitchAccountTaxs" layoutX="533.0" layoutY="564.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Змінити акаунт" />
+   </children>
+</Pane>

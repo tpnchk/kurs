@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursova.controller.RegController">
+   <children>
+      <Text fill="RED" layoutX="98.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax" textAlignment="CENTER" wrappingWidth="94.5999765396117">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="154.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculate" textAlignment="CENTER" wrappingWidth="76.20001316070545">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введіть ваш логін" textAlignment="CENTER" wrappingWidth="138.5999765396116">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="9.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введіть ваш пароль" textAlignment="CENTER" wrappingWidth="148.90781249999986">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfLogin" layoutX="164.0" layoutY="61.0" />
+      <Text layoutX="11.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введіть ще раз пароль" textAlignment="CENTER" wrappingWidth="148.90781249999986">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="butReg" layoutX="95.0" layoutY="238.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Зареєструватися" />
+      <Text fx:id="textError2" fill="RED" layoutX="27.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Даний логін вже використовується" textAlignment="CENTER" wrappingWidth="275.3999490737913">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="tfPassword" layoutX="164.0" layoutY="107.0" />
+      <PasswordField fx:id="tfPasword2" layoutX="165.0" layoutY="156.0" />
+   </children>
+</Pane>
